@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos aleatorios</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section id="randomCats">
+        <div class="container">
+            <h2>Gatos aleatorios</h1>
+
+            <span id="error"></span>
+
+            <div class="random-cats" style="margin-top: 25px;">
+                <img id="img1" src="" alt="">
+                <div class="buttons-container">
+                    <button class="btn" onclick="randomCats();">Recargar</button>
+                    <button class="btn" id="addCatFavourite">Favorito</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="favouriteCats">
+        <div class="container">
+            <h2>Favoritos</h2>
+            <div id="favouriteCatsGrid" class="favourite-cats-grid">
+            <!-- CAT ELEMENTS FROM JS -->
+            </div>
+        </div>
+    </section>
+    <div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
