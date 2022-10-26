@@ -62,6 +62,7 @@ async function favouriteCats () {
             'x-api-key': `${API_KEY}`
         }
     });
+
     const data = await response.json();
     console.log('Favouritess')
     console.log(data)
@@ -74,6 +75,7 @@ async function favouriteCats () {
         //         <img src="${element.image.url}">
         //         <button onclick="" id="deleteCat">Quitar</button>
         //     </div>`
+
         const elementContainer = document.createElement('div')
         const img = document.createElement('img')
         const btn = document.createElement('button')
@@ -83,6 +85,7 @@ async function favouriteCats () {
         img.src = element.image.url;
         elementContainer.appendChild(img)
         elementContainer.appendChild(btn)
+        btn.className = 'btn'
         btn.appendChild(btnText)
         favouriteCatsGrid.appendChild(elementContainer)
         btn.onclick = () => deleteFavouriteCat(element.id)

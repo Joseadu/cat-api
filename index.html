@@ -7,22 +7,26 @@
     <title>Gatos aleatorios</title>
 
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <section id="randomCats">
         <div class="container">
-            <h2>Gatos aleatorios</h1>
-
-            <span id="error"></span>
-
-            <div class="random-cats" style="margin-top: 25px;">
-                <img id="img1" src="" alt="">
-                <div class="buttons-container">
-                    <button class="btn" onclick="randomCats();">Recargar</button>
-                    <button class="btn" id="addCatFavourite">Favorito</button>
-                </div>
+            <div class="left-container">
+                <h1>Bienvenid@ a The Cat API</h1>
+                <p>En esta app podrás ver imágenes de gatos aleatorios.<br>
+                    Pulsa el botón y añádelos a tu lista de favoritos!</p>
             </div>
 
+            <div class="right-container">
+                <div class="random-cats" style="margin-top: 25px;">
+                    <img id="img1" src="" alt="">
+                    <div class="buttons-container">
+                        <button class="btn" onclick="randomCats();">Gato aleatorio</button>
+                        <button class="btn" id="addCatFavourite"><i class="fa-sharp fa-solid fa-heart fa-1x"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
